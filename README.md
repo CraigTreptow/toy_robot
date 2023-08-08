@@ -1,6 +1,10 @@
 # ToyRobot
 
-**TODO: Add description**
+## Description
+
+Code created while going through the [Toy Robot in Elixir](https://leanpub.com/elixir-toyrobot) book.
+
+Use `mix test.watch` during development
 
 ## Installation
 
@@ -18,4 +22,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at <https://hexdocs.pm/toy_robot>.
-
