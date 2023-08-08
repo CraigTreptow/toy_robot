@@ -4,6 +4,12 @@
 
 Code created while going through the [Toy Robot in Elixir](https://leanpub.com/elixir-toyrobot) book.
 
+### Design and Requirements
+
+Origin of grid is the South West corner (0,0)
+
+### Development
+
 Use `mix test.watch` during development
 
 ## Installation
