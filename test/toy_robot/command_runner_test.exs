@@ -29,4 +29,30 @@ defmodule Toyrobot.CommandRunnerTest do
     assert robot.north == 2
     assert robot.facing == :north
   end
+
+  test "handles a place + move command" do
+    %Simulation{robot: robot} =
+      [
+        {:place, %{east: 1, north: 2, facing: :north}},
+        :move
+      ]
+      |> CommandRunner.run()
+
+    assert robot.east == 1
+    assert robot.north == 3
+    assert robot.facing == :north
+  end
+
+  test "handles a place + invalid move command" do
+    %Simulation{robot: robot} =
+      [
+        {:place, %{east: 1, north: 4, facing: :north}},
+        :move
+      ]
+      |> CommandRunner.run()
+
+    assert robot.east == 1
+    assert robot.north == 4
+    assert robot.facing == :north
+  end
 end
